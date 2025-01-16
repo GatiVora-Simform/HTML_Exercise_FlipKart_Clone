@@ -2,6 +2,9 @@
     padding:0;
     margin:0;
 }
+body{
+    background-color: #f0f0f0
+}
 
 nav{
     background-color: #2874f0;
@@ -77,6 +80,7 @@ nav{
     justify-content: center;
     padding: 0px 20px;
     border-bottom: 1px solid #ccc;
+    background-color: white;
  
 }
 
@@ -84,6 +88,8 @@ nav{
     width: 80px;
     height: 112px;
     cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
     /* flex: 1; */
 }
 
@@ -94,7 +100,114 @@ nav{
 
 .topProductNavbar_Nav p{
     font-weight: 510;
+    text-align: center;
 }
 .topProductNavbar_Nav:hover p{
     color: #2874f0;
+}
+
+
+/* */
+
+
+
+.deals{
+    height: 380px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-part{
+    background-color: white;
+    height: 100%;
+    width: 85%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+
+}
+.right-part{
+    background-color: white;
+    height: 100%;
+    width: 14%;
+    padding: 0.5em;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.deals-img{
+    width: 100%;
+    height: 100%;
+}
+
+.viewall-btn{
+    background-color: #2874f0;
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 2px;
+}
+
+.leftpart-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    /* height: 25%; */
+    border-bottom: 1px solid #ccc;
+}
+
+.leftpart-top h1{
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.leftpart-card-container{
+    /* background-color: red; */
+    height: 75%;
+    /* overflow: hidden;  */
+    display: flex;
+}
+
+.card-product{
+    width: 200px;
+    height: 180px;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.card-product img {
+    width: 100%;  /* Makes the image responsive to fit within the card */
+    height: 200px; /* Keeps the aspect ratio intact */
+    object-fit: cover;  /* Optionally, use cover to fill the container without distortion */
+}
+
+
+
+.card-product-name{
+    margin: 1px 0px;
+    font-size: 1rem;
+}
+
+
+.card-product-price{
+    margin: 2px 0px;
+    color:#388e3c
+}
+
+.card-product-description{
+    margin: 2px 0px;
+}
+
+
+/* image hover effect */
+
+.card-product:hover img{
+    transform: scale(1.1);
+}
+
+
+.deals-section{
+    margin:70px;
 }
