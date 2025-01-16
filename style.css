@@ -115,20 +115,39 @@ nav{
     height: 380px;
     display: flex;
     justify-content: space-around;
+   
 }
 
 .left-part{
     background-color: white;
     height: 100%;
-    width: 85%;
+    width: 83%;
+    height: 400px;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
 
+
 }
+.de {
+    display: flex;
+    align-items: center;  /* Vertically center the items */
+    gap: 10px;  /* Add some space between the elements */
+}
+
+.leftpart-top-content h1 {
+    margin: 0;  /* Remove any default margin from the <h1> */
+    font-size: 1.6rem;  /* Adjust the font size if needed */
+}
+
+.leftpart-top-content i {
+    font-size: 1.2rem;  /* Adjust the icon size */
+}
+
 .right-part{
     background-color: white;
     height: 100%;
-    width: 14%;
+    width: 16%;
     padding: 0.5em;
+    margin-left: 0.5rem;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
 }
 
@@ -145,6 +164,7 @@ nav{
     border: none;
     padding: 9px 18px;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .leftpart-top{
@@ -210,4 +230,79 @@ nav{
 
 .deals-section{
     margin:70px;
+}
+
+
+.music{
+   /* background-color: red;  */
+   width: 100%;
+}
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    .search {
+        width: 250px;
+        margin: 0;
+    }
+
+    .search input {
+        width: 200px;
+    }
+
+    .loginbtn {
+        margin-left: 0;
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+
+    .logo p {
+        font-size: 14px;
+    }
+
+    .Navlink {
+        font-size: 16px;
+        margin: 0px 10px;
+    }
+
+    .Navlink.angledownicon {
+        font-size: 16px;
+    }
+}
+
+/* For smaller devices like mobile portrait */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo, .search, .loginbtn, .Navlink {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search {
+        margin-bottom: 10px;
+    }
+
+    .loginbtn {
+        margin: 10px 0;
+    }
+
+    .Navlink {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .angledownicon {
+        display: none; /* Hide More dropdown on mobile */
+    }
 }
