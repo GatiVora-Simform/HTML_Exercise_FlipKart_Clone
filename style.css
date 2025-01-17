@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    
+    
+}
+body{
+    background-color: #f0f0f0
+}
+
+nav{
+    background-color: #2874f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    
+}
+
+
+.plus-color{
+    color: #ffc200;
+    font-weight: 900;
+}
+
+.logo p{
+    color: white;
+    position: relative;
+    top: -5px;
+}
+
+.search {
+    background-color: white;
+    padding: 8px;
+    width: 400px;
+    height: 20px;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #2874f0;
+    box-shadow: -7px -7px 10px rgba(0,0,0,0.1),7px 7px 10px rgba(0,0,0,0.1);
+    border-radius: 2 px;
+
+
+}
+
+.search input{
+    width: 380px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.loginbtn{
+    margin-left: 100px;
+    padding: 7px 40px;
+    font-size: 16px;
+    font-weight: 550;
+    border: none;
+    outline:none ;
+    color: #2874f0;
+    background-color: white;
+}
+
+.Navlink{
+    margin: 0px 20px;
+
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.angledownicon i{
+ font-size: 10px;;
+}
+
+/***************/
+
+.topProductNavbar{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+ 
+}
+
+.topProductNavbar_Nav{
+    width: 80px;
+    height: 112px;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* flex: 1; */
+}
+
+.topProductNavbar_Nav img{
+    height: 64px;
+    width: 64px;
+}
+
+.topProductNavbar_Nav p{
+    font-weight: 510;
+    text-align: center;
+}
+.topProductNavbar_Nav:hover p{
+    color: #2874f0;
+}
+
+
+/* */
+
+
+
+.deals{
+    height: 380px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.left-part{
+    background-color: white;
+    height: 100%;
+    width: 83%;
+    height: 400px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    font-family: 'Roboto';
+
+
+}
+.de {
+    display: flex;
+    align-items: center;  /* Vertically center the items */
+    gap: 10px;  /* Add some space between the elements */
+}
+
+.leftpart-top-content h1 {
+    margin: 0;  /* Remove any default margin from the <h1> */
+    font-size: 1.6rem;  /* Adjust the font size if needed */
+}
+
+.leftpart-top-content i {
+    font-size: 1.2rem;  /* Adjust the icon size */
+}
+
+.right-part{
+    background-color: white;
+    height: 100%;
+    width: 16%;
+    padding: 0.5em;
+    margin-left: 0.5rem;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.deals-img{
+    width: 100%;
+    height: 100%;
+}
+
+.viewall-btn{
+    background-color: #2874f0;
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.leftpart-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    /* height: 25%; */
+    border-bottom: 1px solid #ccc;
+}
+
+.leftpart-top h1{
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.leftpart-card-container{
+    /* background-color: red; */
+    height: 75%;
+    /* overflow: hidden;  */
+    display: flex;
+}
+
+.card-product{
+    width: 200px;
+    height: 180px;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.card-product img {
+    width: 100%;  /* Makes the image responsive to fit within the card */
+    height: 200px; /* Keeps the aspect ratio intact */
+    object-fit: cover;  /* Optionally, use cover to fill the container without distortion */
+}
+
+
+
+.card-product-name{
+    margin: 1px 0px;
+    font-size: 1rem;
+}
+
+
+.card-product-price{
+    margin: 2px 0px;
+    color:#388e3c
+}
+
+.card-product-description{
+    margin: 2px 0px;
+}
+
+
+/* image hover effect */
+
+.card-product:hover img{
+    transform: scale(1.1);
+}
+
+
+.deals-section{
+    margin:70px;
+}
+
+
+.music{
+   /* background-color: red;  */
+   width: 100%;
+}
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    .search {
+        width: 250px;
+        margin: 0;
+    }
+
+    .search input {
+        width: 200px;
+    }
+
+    .loginbtn {
+        margin-left: 0;
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+
+    .logo p {
+        font-size: 14px;
+    }
+
+    .Navlink {
+        font-size: 16px;
+        margin: 0px 10px;
+    }
+
+    .Navlink.angledownicon {
+        font-size: 16px;
+    }
+}
+
+/* For smaller devices like mobile portrait */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo, .search, .loginbtn, .Navlink {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search {
+        margin-bottom: 10px;
+    }
+
+    .loginbtn {
+        margin: 10px 0;
+    }
+
+    .Navlink {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .angledownicon {
+        display: none; /* Hide More dropdown on mobile */
+    }
+}
